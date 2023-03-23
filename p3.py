@@ -1,3 +1,6 @@
 d={'Nepal':'Kathmandu','Italy':'Rome','England':'London' }
 a=str(input("Enter what you want: "))
-print(d[a])
+items = d.items()  
+for key, value in items:  
+    if value == a: 
+        print(key)
